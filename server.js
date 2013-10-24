@@ -8,6 +8,7 @@ http.createServer(function(request, response) {
     console.log("Request " + pathname + " received ");
     route(handle, pathname);
     response.writeHead(200, {"Content-Type": "text/plain"});
+    var content = route(handle, pathname);
     response.write("Hello world");
     response.end();
 }).listen(8888);
