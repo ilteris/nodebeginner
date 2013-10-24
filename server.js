@@ -9,7 +9,7 @@ http.createServer(function(request, response) {
     route(handle, pathname);
     response.writeHead(200, {"Content-Type": "text/plain"});
     var content = route(handle, pathname);
-    response.write("Hello world");
+    response.write(content);
     response.end();
 }).listen(8888);
 console.log("server started")
