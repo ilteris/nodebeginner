@@ -5,7 +5,7 @@ function start() {
         while (new Date().getTime() < startTime + milliSeconds);
 
     }
-    sleep(1000);
+    sleep(10000);
 	return "Hello Start";
 }
 
